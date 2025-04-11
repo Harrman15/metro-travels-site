@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -15,19 +14,33 @@ body {
   margin: auto;
   padding: 0 1.5rem;
 }
-header {
-  background: #f8f8f8;
-  padding: 5rem 0 3rem;
+.hero {
+  background: url('https://images.unsplash.com/photo-1549921296-3a7e7c9c4b9a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: white;
+  position: relative;
 }
-header h1 {
-  font-size: 3rem;
-  color: #0077cc;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 .tagline {
+  font-size: 1.3rem;
   margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #555;
 }
 section {
   padding: 4rem 0;
@@ -40,7 +53,6 @@ section h2 {
 }
 .about p,
 .services ul,
-.testimonials .testimonial,
 .contact p {
   font-size: 1.1rem;
   color: #444;
@@ -62,36 +74,26 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 .card {
-  background: #f0f8ff;
+  background: linear-gradient(to bottom right, #fff, #f0f8ff);
   border-radius: 10px;
   padding: 1.5rem;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   transition: 0.3s ease;
 }
 .card:hover {
-  background: #e0f0ff;
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 .card h3 {
   font-size: 1.4rem;
   color: #0077cc;
   margin-bottom: 0.5rem;
 }
-.testimonials .testimonial {
-  max-width: 700px;
-  margin: 2rem auto;
-  background: #f9f9f9;
-  padding: 2rem;
-  border-left: 4px solid #0077cc;
-}
-.testimonial span {
-  display: block;
-  margin-top: 1rem;
-  color: #0077cc;
-  font-weight: bold;
+.card p {
+  font-size: 1rem;
+  color: #333;
 }
 .contact p {
   text-align: center;
@@ -109,12 +111,12 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
-/* Responsive */
 @media screen and (max-width: 768px) {
-  header h1 {
+  .hero h1 {
     font-size: 2.4rem;
   }
   .tagline {
     font-size: 1rem;
   }
 }
+
