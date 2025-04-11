@@ -10,57 +10,84 @@
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Metro Travels</h1>
-      <p class="tagline">Luxury Getaways | Curated Tours | Unforgettable Moments</p>
+    <div class="hero__content" data-aos="fade-up">
+      <h1 class="hero__title">Metro Travels</h1>
+      <p class="hero__tagline">Luxury Getaways | Curated Tours | Unforgettable Moments</p>
     </div>
   </header>
 
-  <section class="about" data-aos="fade-up">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Metro Travels offers high-end travel planning across the globe. From luxury escapes to visa, flights, forex & guided itineraries – we do it all. Based in Delhi, we serve elite clients worldwide.</p>
-    </div>
-  </section>
-
-  <section class="services" data-aos="fade-up">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul>
-        <li>✈️ First Class Flights & Private Jets</li>
-        <li>🏨 5-Star Hotels & Villas</li>
-        <li>🛂 Visa Assistance</li>
-        <li>🚖 Chauffeur & Private Tours</li>
-        <li>💱 Currency Exchange Help</li>
-        <li>📸 Luxury Honeymoons & Group Trips</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="destinations" data-aos="fade-up">
-    <div class="container">
-      <h2>Top Destinations</h2>
-      <div class="cards-container">
-        <div class="card"><h3>Dubai</h3><p>Skyline, Shopping & Safari.</p></div>
-        <div class="card"><h3>Turkey</h3><p>Hot air balloons & culture.</p></div>
-        <div class="card"><h3>Switzerland</h3><p>Luxury, Alps & Lakes.</p></div>
-        <div class="card"><h3>Singapore</h3><p>Futuristic & fun.</p></div>
-        <div class="card"><h3>Maldives</h3><p>Private water villas.</p></div>
-        <div class="card"><h3>Kashmir</h3><p>The paradise valley.</p></div>
+  <main>
+    <section class="section about" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section__title">About Us</h2>
+        <p class="section__text">
+          Metro Travels offers high-end travel planning across the globe. From luxury escapes to visa, flights, forex & guided itineraries – we do it all. Based in Delhi, we serve elite clients worldwide.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact" data-aos="fade-up">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:harry.aispecialist@gmail.com">harry.aispecialist@gmail.com</a></p>
-      <p>Instagram: <a href="https://instagram.com/metrotravelsindia" target="_blank">@metrotravelsindia</a></p>
-      <p>WhatsApp: <a href="https://wa.me/918447722397" target="_blank">+91 84477 22397</a></p>
-    </div>
-  </section>
+    <section class="section services" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section__title">Our Services</h2>
+        <ul class="services__list">
+          <li>✈️ First Class Flights & Private Jets</li>
+          <li>🏨 5-Star Hotels & Villas</li>
+          <li>🛂 Visa Assistance</li>
+          <li>🚖 Chauffeur & Private Tours</li>
+          <li>💱 Currency Exchange Help</li>
+          <li>📸 Luxury Honeymoons & Group Trips</li>
+        </ul>
+      </div>
+    </section>
 
-  <footer>
+    <section class="section destinations" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section__title">Top Destinations</h2>
+        <div class="cards">
+          <div class="card"><h3>Dubai</h3><p>Skyline, Shopping & Safari.</p></div>
+          <div class="card"><h3>Turkey</h3><p>Hot air balloons & culture.</p></div>
+          <div class="card"><h3>Switzerland</h3><p>Luxury, Alps & Lakes.</p></div>
+          <div class="card"><h3>Singapore</h3><p>Futuristic & fun.</p></div>
+          <div class="card"><h3>Maldives</h3><p>Private water villas.</p></div>
+          <div class="card"><h3>Kashmir</h3><p>The paradise valley.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <p>Email: <a href="mailto:harry.aispecialist@gmail.com">harry.aispecialist@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/metrotravelsindia" target="_blank">@metrotravelsindia</a></p>
+        <p>WhatsApp: <a href="https://wa.me/918447722397" target="_blank">+91 84477 22397</a></p>
+
+        <!-- 🌟 Lead Form Starts Here -->
+        <form class="lead-form" action="https://formspree.io/f/your-id" method="POST">
+          <h3 class="lead-form__title">Get a Free Quote</h3>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Travel Plan</label>
+            <textarea id="message" name="message" rows="4" placeholder="e.g. Dubai honeymoon in June..."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <!-- 🌟 Lead Form Ends Here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Metro Travels. Luxury Travel Starts Here.</p>
     </div>
