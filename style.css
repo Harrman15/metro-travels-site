@@ -1,243 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #0e0e0e;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background: #1a1a1a;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.destinations {
+  padding: 4rem 2rem;
+  background-color: #111;
+}
+
+.destinations h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #d4af37;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  border-color: #d4af37;
+}
+
+.card h3 {
+  color: #f9d342;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.contact p a {
+  color: #f9d342;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0e0e0e;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* Responsive Tweaks */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
   }
-  
-  body {
-    background-color: #0b0c10;
-    color: #f1f1f1;
-    font-family: 'Playfair Display', serif;
-    scroll-behavior: smooth;
-    line-height: 1.6;
+
+  .tagline {
+    font-size: 1rem;
   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
+
+  .card {
+    padding: 1.5rem;
   }
-  
-  header {
-    background-color: #101216;
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    color: #ffd700;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav ul li a {
-    color: #f1f1f1;
-    font-weight: 500;
-    transition: 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #ffd700;
-  }
-  
-  /* Hero */
-  .hero {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-      url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    height: 95vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
+
+  .card h3 {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
   }
-  
-  .cta-btn {
-    background-color: #ffd700;
-    color: #0b0c10;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s ease;
-  }
-  
-  .cta-btn:hover {
-    background-color: #f0c000;
-  }
-  
-  /* Sections */
-  section {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Destination grid */
-  .destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  .destination-item {
-    background-color: #1a1c20;
-    padding: 1.5rem;
-    border-radius: 10px;
-    font-weight: 500;
-    border: 1px solid #ffd70022;
-    transition: 0.3s ease;
-  }
-  
-  .destination-item:hover {
-    background-color: #ffd700;
-    color: #0b0c10;
-  }
-  
-  /* Services */
-  .services ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .services li {
-    background-color: #1a1c20;
-    padding: 1.2rem;
-    border-left: 5px solid #ffd700;
-    border-radius: 8px;
-    font-weight: 500;
-  }
-  
-  /* Booking */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  input, textarea {
-    background-color: #101216;
-    border: 1px solid #444;
-    padding: 1rem;
-    color: #f1f1f1;
-    border-radius: 8px;
-  }
-  
-  button {
-    background-color: #ffd700;
-    color: #0b0c10;
-    border: none;
-    padding: 1rem;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #f0c000;
-  }
-  
-  /* Testimonials */
-  .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  
-  .testimonial-card {
-    background-color: #1a1c20;
-    border-left: 4px solid #ffd700;
-    padding: 1.5rem;
-    border-radius: 10px;
-    font-style: italic;
-  }
-  
-  /* Instagram Preview */
-  .insta-preview {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
-  
-  .insta-preview img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  /* Contact Buttons */
-  .contact-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .call-btn,
-  .whatsapp-btn {
-    background-color: #ffd700;
-    color: #0b0c10;
-    padding: 0.8rem 1.5rem;
-    border-radius: 30px;
-    font-weight: bold;
-  }
-  
-  .call-btn:hover,
-  .whatsapp-btn:hover {
-    background-color: #f0c000;
-  }
-  
-  /* WhatsApp Float */
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    padding: 0.8rem 1.2rem;
-    border-radius: 50px;
-    font-weight: bold;
-    z-index: 999;
-  }
-  
-  footer {
-    background-color: #101216;
-    color: #aaa;
-    padding: 2rem;
+
+  .card p {
     font-size: 0.9rem;
-    text-align: center;
   }
-  
+
+  .destinations h2, .contact h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+}

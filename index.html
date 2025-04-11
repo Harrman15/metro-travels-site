@@ -2,134 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metro Travels | Luxury Worldwide Travel Experiences</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metro Travels</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font + AOS Animations -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <header>
-    <nav>
-      <div class="logo">Metro Travels</div>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1 data-aos="fade-down">Metro Travels</h1>
+    <p data-aos="fade-up" class="tagline">Luxury Travel Experiences Curated Just for You</p>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero" data-aos="fade-up">
-    <h1>Luxury Travel. Tailored For You.</h1>
-    <p>Discover bespoke journeys crafted for comfort, class, and culture.</p>
-    <a href="#booking" class="cta-btn">Plan Your Trip</a>
-  </section>
+  <section class="destinations">
+    <h2 data-aos="fade-right">Top Destinations</h2>
+    <div class="cards-container">
 
-  <!-- DESTINATIONS -->
-  <section class="destinations-list" id="destinations" data-aos="fade-up">
-    <h2>Top Curated Destinations</h2>
-    <div class="destinations-grid">
-      <div class="destination-item">🇲🇻 Maldives</div>
-      <div class="destination-item">🇦🇪 Dubai & Abu Dhabi</div>
-      <div class="destination-item">🇫🇷 Paris, France</div>
-      <div class="destination-item">🇨🇭 Switzerland</div>
-      <div class="destination-item">🇮🇹 Italy (Rome, Venice)</div>
-      <div class="destination-item">🇹🇭 Thailand (Phuket, Bangkok)</div>
-      <div class="destination-item">🌴 Bali, Indonesia</div>
-      <div class="destination-item">🇸🇬 Singapore</div>
-      <div class="destination-item">🇮🇳 Kashmir & Manali</div>
+      <div class="card" data-aos="zoom-in"><h3>Bali</h3><p>Explore the magical temples and lush beaches.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Thailand</h3><p>From Bangkok’s streets to Phuket’s luxury.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Manali</h3><p>Breathe the Himalayas and snow-kissed beauty.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Dubai</h3><p>Luxury shopping, ultramodern architecture, and nightlife.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Paris</h3><p>Romance and timeless elegance by the Seine.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>London</h3><p>History, fashion, and royal vibes await.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Europe Tour</h3><p>Explore multiple countries in one curated journey.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Singapore</h3><p>Clean streets, nightlife, and futuristic beauty.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Maldives</h3><p>Turquoise waters, luxury villas & honeymoon magic.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Kashmir</h3><p>Heaven on Earth with lakes, snow & meadows.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Turkey</h3><p>Hot air balloons, bazaars, and ancient wonders.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Vietnam</h3><p>Nature, culture, and unbelievable views on a budget.</p></div>
+      
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services" data-aos="fade-up">
-    <h2>What We Offer</h2>
-    <ul>
-      <li>✈️ Business & First Class Flights</li>
-      <li>🏨 5-Star Hotels & Private Villas</li>
-      <li>🛂 Visa Support & Documentation</li>
-      <li>🚁 Private Jets & Helicopters</li>
-      <li>💱 Currency Exchange Assistance</li>
-      <li>📸 Honeymoon, Group & Luxury Tours</li>
-    </ul>
+  <section class="contact" data-aos="fade-up">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:harry.aispecialist@gmail.com">harry.aispecialist@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/metrotravelsindia" target="_blank">@metrotravelsindia</a></p>
   </section>
 
-  <!-- BOOKING -->
-  <section class="booking" id="booking" data-aos="fade-up">
-    <h2>Start Planning Your Trip</h2>
-    <form action="https://formsubmit.co/harry.aispecialist@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="WhatsApp Number" required />
-      <input type="text" name="destination" placeholder="Destination" required />
-      <input type="number" name="budget" placeholder="Budget in ₹" required />
-      <textarea name="message" placeholder="Tell us what you're dreaming of..." rows="5"></textarea>
-      <button type="submit">Submit Request</button>
-    </form>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials" id="testimonials" data-aos="fade-up">
-    <h2>Client Experiences</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>"Our Maldives honeymoon was flawless — from flight to villa to candlelight dinner. Metro Travels is luxury redefined."</p>
-        <h4>— Riya & Karan</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"Visa, flights, hotels, all taken care of. Felt like royalty. Can’t wait to book again."</p>
-        <h4>— Arjun Mehra</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"We explored Paris and Switzerland in style. Thanks for curating our dream Europe trip!"</p>
-        <h4>— Shruti Sharma</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTAGRAM FEED -->
-  <section class="instagram" data-aos="fade-up">
-    <h2>Follow Us On Instagram</h2>
-    <p><a href="https://instagram.com/metrotravelsindia" target="_blank">@metrotravelsindia</a></p>
-    <div class="insta-preview">
-      <img src="https://source.unsplash.com/featured/?travel,beach" alt="insta1" />
-      <img src="https://source.unsplash.com/featured/?luxury,hotel" alt="insta2" />
-      <img src="https://source.unsplash.com/featured/?paris,travel" alt="insta3" />
-    </div>
-  </section>
-
-  <!-- CONTACT BUTTONS -->
-  <section class="contact-buttons" id="contact" data-aos="fade-up">
-    <h2>Talk to Our Concierge</h2>
-    <div class="contact-actions">
-      <a href="tel:+918447722397" class="call-btn">📞 Call Us</a>
-      <a href="https://wa.me/918447722397" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Metro Travels. Luxury Journeys Worldwide.</p>
+    <p>&copy; 2025 Metro Travels. Crafted for excellence.</p>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/918447722397" class="whatsapp-float" target="_blank">💬</a>
-
-  <!-- AOS INIT -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-
-  <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
