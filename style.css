@@ -236,4 +236,44 @@
   .booking button:hover {
     background-color: #001d3d;
   }
-    
+  .contact-buttons {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .contact-buttons h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #002244;
+  }
+  
+  .contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .call-btn,
+  .whatsapp-btn {
+    background-color: #002244;
+    color: #fff;
+    padding: 0.9rem 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .call-btn:hover {
+    background-color: #004080;
+  }
+  
+  .whatsapp-btn {
+    background-color: #25d366;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #1ebe5b;
+  }
+      
