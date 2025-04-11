@@ -66,3 +66,39 @@
   <script src="script.js"></script>
 </body>
 </html>
+<section class="packages-grid" id="packages">
+    <h2>Top Travel Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="Dubai">
+        <h3>Dubai Delight</h3>
+        <p>Starting from ₹44,999</p>
+        <a href="#booking" class="book-now">Book Now</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8b9" alt="Europe">
+        <h3>Europe Explorer</h3>
+        <p>Starting from ₹1,25,000</p>
+        <a href="#booking" class="book-now">Book Now</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576842634009-3a56d98e222f" alt="Maldives">
+        <h3>Maldives Escape</h3>
+        <p>Starting from ₹65,000</p>
+        <a href="#booking" class="book-now">Book Now</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="booking" id="booking">
+    <h2>Plan Your Trip</h2>
+    <form action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required />
+      <input type="text" name="destination" placeholder="Preferred Destination" required />
+      <input type="number" name="budget" placeholder="Your Budget (₹)" required />
+      <textarea name="message" placeholder="Any Special Requests?" rows="4"></textarea>
+      <button type="submit">Submit Booking Request</button>
+    </form>
+  </section>
+  
