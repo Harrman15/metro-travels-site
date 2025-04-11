@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metro Travels | Luxury Worldwide Journeys</title>
+  <title>Metro Travels | Curated Luxury Journeys</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- HEADER / NAVBAR -->
   <header>
     <nav>
       <div class="logo">Metro Travels</div>
@@ -17,7 +17,7 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#destinations">Destinations</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#booking">Book</a></li>
+        <li><a href="#booking">Booking</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -25,78 +25,70 @@
 
   <!-- HERO SECTION -->
   <section class="hero" id="hero">
-    <h1>Luxury Travel. Personalized For You.</h1>
-    <p>Crafting elite journeys to the world's most exclusive destinations.</p>
-    <a href="#booking" class="cta-btn">Start Planning</a>
+    <h1>Luxury Travel. Tailored for You.</h1>
+    <p>Discover handpicked destinations and experiences curated for a life well-traveled.</p>
+    <a href="#booking" class="cta-btn">Book Your Journey</a>
   </section>
 
-  <!-- DESTINATION SHOWCASE -->
-  <section class="packages-grid" id="destinations">
-    <h2>Top Destinations</h2>
-    <div class="package-cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1618354691372-bf5d3f761f2e?auto=format&fit=crop&w=800&q=80" alt="Dubai">
-        <h3>Dubai Elite</h3>
-        <p>Luxury shopping, private yachts, desert glamour.</p>
-        <a href="#booking" class="book-now">Book Now</a>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Paris">
-        <h3>Paris Romance</h3>
-        <p>Château stays, Seine cruises, fine dining in Paris.</p>
-        <a href="#booking" class="book-now">Book Now</a>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1610705265573-3fe09f3173ef?auto=format&fit=crop&w=800&q=80" alt="Maldives">
-        <h3>Maldives Bliss</h3>
-        <p>Private overwater villas, crystal lagoons, sunset dinners.</p>
-        <a href="#booking" class="book-now">Book Now</a>
-      </div>
+  <!-- DESTINATIONS LIST -->
+  <section class="destinations-list" id="destinations">
+    <h2>Our Top Curated Destinations</h2>
+    <div class="destinations-grid">
+      <div class="destination-item">🌴 Bali, Indonesia</div>
+      <div class="destination-item">🇹🇭 Thailand (Phuket, Bangkok)</div>
+      <div class="destination-item">🇮🇳 Manali, India</div>
+      <div class="destination-item">🇮🇳 Kashmir & Gulmarg</div>
+      <div class="destination-item">🇸🇬 Singapore</div>
+      <div class="destination-item">🇦🇪 Dubai & Abu Dhabi</div>
+      <div class="destination-item">🇫🇷 Paris, France</div>
+      <div class="destination-item">🇲🇻 Maldives</div>
+      <div class="destination-item">🇨🇭 Switzerland</div>
+      <div class="destination-item">🇮🇹 Italy (Rome, Venice)</div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES SECTION -->
   <section class="services" id="services">
-    <h2>Our Signature Services</h2>
+    <h2>What We Offer</h2>
     <ul>
-      <li>✨ Bespoke Itinerary Planning</li>
-      <li>🛂 Visa & Concierge Support</li>
-      <li>✈️ Business & First-Class Flights</li>
-      <li>🏨 Handpicked 5-Star Resorts</li>
-      <li>🚁 Private Jets & Transfers</li>
-      <li>💼 Corporate & VIP Travel Solutions</li>
+      <li>✈️ First & Business Class Flights</li>
+      <li>🏨 5-Star Hotels & Private Villas</li>
+      <li>🛂 Visa Assistance & Documentation</li>
+      <li>🚁 Private Jet & Helicopter Charters</li>
+      <li>💱 Forex & Currency Support</li>
+      <li>📸 Custom Honeymoon & Group Tours</li>
     </ul>
   </section>
 
   <!-- BOOKING FORM -->
   <section class="booking" id="booking">
-    <h2>Request Your Custom Travel Plan</h2>
-    <form action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required />
+    <h2>Start Planning Your Trip</h2>
+    <form action="https://formsubmit.co/harry.aispecialist@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
       <input type="tel" name="phone" placeholder="WhatsApp Number" required />
-      <input type="text" name="destination" placeholder="Preferred Destination" required />
-      <input type="number" name="budget" placeholder="Budget in ₹" required />
-      <textarea name="message" placeholder="Tell us your dream trip..." rows="5"></textarea>
-      <button type="submit">Submit Request</button>
+      <input type="text" name="destination" placeholder="Destination Interested In" required />
+      <input type="number" name="budget" placeholder="Approx Budget (₹)" required />
+      <textarea name="message" placeholder="Any specific preferences or questions?" rows="5"></textarea>
+      <button type="submit">Submit Inquiry</button>
     </form>
   </section>
 
   <!-- CONTACT SECTION -->
   <section class="contact-buttons" id="contact">
-    <h2>Let's Talk Travel</h2>
+    <h2>Talk to Our Travel Concierge</h2>
     <div class="contact-actions">
       <a href="tel:+918447722397" class="call-btn">📞 Call Us</a>
-      <a href="https://wa.me/918447722397" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+      <a href="https://wa.me/918447722397" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Metro Travels. Luxury Journeys. Worldwide.</p>
+    <p>© 2025 Metro Travels. Crafted Experiences. Global Destinations.</p>
   </footer>
 
-  <!-- WHATSAPP FLOAT -->
+  <!-- WHATSAPP FLOATING BUTTON -->
   <a href="https://wa.me/918447722397" class="whatsapp-float" target="_blank">💬</a>
 
   <script src="script.js"></script>
