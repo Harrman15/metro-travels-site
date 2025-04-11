@@ -1,4 +1,3 @@
-/* 💎 CLASSY DARK LUXURY THEME */
 * {
     margin: 0;
     padding: 0;
@@ -9,23 +8,18 @@
     background-color: #0b0c10;
     color: #f1f1f1;
     font-family: 'Playfair Display', serif;
-    line-height: 1.6;
-    letter-spacing: 0.4px;
     scroll-behavior: smooth;
+    line-height: 1.6;
   }
   
   a {
     text-decoration: none;
+    color: inherit;
   }
   
   header {
     background-color: #101216;
     padding: 1.2rem 2rem;
-    color: #f1f1f1;
-    box-shadow: 0 1px 10px rgba(255, 215, 0, 0.05);
-  }
-  
-  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,14 +27,14 @@
   
   .logo {
     font-size: 1.8rem;
-    font-weight: bold;
     color: #ffd700;
+    font-weight: bold;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   nav ul li a {
@@ -53,10 +47,10 @@
     color: #ffd700;
   }
   
-  /* HERO SECTION */
+  /* Hero */
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-      url('https://images.unsplash.com/photo-1526766764396-4d65c0d4eb54?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     height: 95vh;
     color: #fff;
     display: flex;
@@ -68,30 +62,29 @@
   }
   
   .hero h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    font-style: italic;
   }
   
   .cta-btn {
     background-color: #ffd700;
     color: #0b0c10;
-    padding: 0.9rem 2rem;
+    padding: 0.8rem 2rem;
     border-radius: 50px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
   
   .cta-btn:hover {
     background-color: #f0c000;
   }
   
-  /* GENERAL SECTIONS */
+  /* Sections */
   section {
     padding: 5rem 2rem;
     max-width: 1200px;
@@ -101,11 +94,11 @@
   
   section h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
     color: #ffd700;
+    margin-bottom: 1.5rem;
   }
   
-  /* DESTINATIONS GRID */
+  /* Destination grid */
   .destinations-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -116,29 +109,23 @@
   .destination-item {
     background-color: #1a1c20;
     padding: 1.5rem;
-    border: 1px solid #ffd70033;
     border-radius: 10px;
-    color: #f1f1f1;
     font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
+    border: 1px solid #ffd70022;
     transition: 0.3s ease;
   }
   
   .destination-item:hover {
     background-color: #ffd700;
     color: #0b0c10;
-    font-weight: bold;
-    cursor: pointer;
   }
   
-  /* SERVICES LIST */
+  /* Services */
   .services ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
   }
   
   .services li {
@@ -149,7 +136,7 @@
     font-weight: 500;
   }
   
-  /* BOOKING FORM */
+  /* Booking */
   form {
     display: flex;
     flex-direction: column;
@@ -157,14 +144,12 @@
     margin-top: 2rem;
   }
   
-  input,
-  textarea {
+  input, textarea {
     background-color: #101216;
-    color: #f1f1f1;
     border: 1px solid #444;
     padding: 1rem;
+    color: #f1f1f1;
     border-radius: 8px;
-    font-size: 1rem;
   }
   
   button {
@@ -175,20 +160,50 @@
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
   }
   
   button:hover {
     background-color: #f0c000;
   }
   
-  /* CONTACT BUTTONS */
-  .contact-actions {
+  /* Testimonials */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .testimonial-card {
+    background-color: #1a1c20;
+    border-left: 4px solid #ffd700;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-style: italic;
+  }
+  
+  /* Instagram Preview */
+  .insta-preview {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .insta-preview img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Contact Buttons */
+  .contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
   }
   
   .call-btn,
@@ -198,7 +213,6 @@
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
     font-weight: bold;
-    transition: 0.3s;
   }
   
   .call-btn:hover,
@@ -206,7 +220,7 @@
     background-color: #f0c000;
   }
   
-  /* WHATSAPP FLOATING BUTTON */
+  /* WhatsApp Float */
   .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -216,20 +230,14 @@
     padding: 0.8rem 1.2rem;
     border-radius: 50px;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
   }
   
-  .whatsapp-float:hover {
-    background-color: #1ebe5b;
-  }
-  
-  /* FOOTER */
   footer {
     background-color: #101216;
     color: #aaa;
-    text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     font-size: 0.9rem;
+    text-align: center;
   }
   
-      
